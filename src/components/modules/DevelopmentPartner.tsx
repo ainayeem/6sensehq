@@ -1,3 +1,4 @@
+import devFeature from "@/assets/dev-partner/dev-feature.png";
 import logo1 from "@/assets/dev-partner/logo-1.png";
 import logo2 from "@/assets/dev-partner/logo-2.svg";
 import logo3 from "@/assets/dev-partner/logo-3.svg";
@@ -14,7 +15,7 @@ const DevelopmentPartner = () => {
       <h1 className="font-bold text-2xl text-center">
         A Development Partner for <br /> New Age Startups
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-8 gap-4 mt-8 md:px-52 justify-center items-center">
         <Image
           src={logo1}
           alt="Development Partner"
@@ -72,6 +73,13 @@ const DevelopmentPartner = () => {
           className="mx-auto my-4"
         />
       </div>
+      <Image
+        src={devFeature}
+        alt="Development Partner"
+        width={1000}
+        height={1000}
+        className="mx-auto my-4 px-4"
+      />
     </div>
   );
 };
