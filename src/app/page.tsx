@@ -1,3 +1,9 @@
+import DevelopmentPartner from "@/components/modules/DevelopmentPartner";
+
 export default function Home() {
-  return <h1>hi</h1>;
+  return (
+    <div>
+      <DevelopmentPartner />
+    </div>
+  );
 }
