@@ -4,13 +4,12 @@ import Image from "next/image";
 
 const StartupStory = () => {
   return (
-    <div className="md:flex">
-      <div className="p-6 bg-[#faf6f1]">
-        <h2 className="font-bold text-2xl mb-4">Startup story</h2>
-        <h1 className="font-bold text-4xl">
+    <div className="md:flex md:flex-row-reverse mx-auto lg:px-28 lg:my-16">
+      <div className="px-6 bg-[#faf6f1] py-6 md:py-8 md:pl-16 md:w-[50%]">
+        <h2 className="font-bold text-2xl mb-4 text-primary">Startup Story</h2>
+        <h1 className="font-bold text-4xl text-primary">
           Empowering the brave EV revolution with
-          <br />
-          <span className="text-secondary">Charge OnSite</span>
+          <span className="text-secondary"> Charge OnSite</span>
         </h1>
         <p className="my-4">
           For 36 months, 6sense has fueled Charge OnSite—a U.S. EV-charging
@@ -19,16 +18,17 @@ const StartupStory = () => {
         <div className="space-y-4 font-medium text-[12px]">
           <div className="flex gap-2">
             <BadgeCheck />
-            <p> 20,000+ Dev Hours in 36 sprints </p>
+            <p>50,000+ Dev Hours delivered for Pattern50.</p>
           </div>
           <div className="flex gap-2">
             <BadgeCheck />
-            <p>30+ Charging Stations deployed</p>
+            <p>13 Experts accelerating 3 startup backlogs.</p>
           </div>
           <div className="flex gap-2">
             <BadgeCheck />
             <p>
-              <span className="font-bold">$1.5M</span> Saved in hiring costs
+              <span className="font-bold">$1.5M</span> Saved on Pattern50
+              product costs.
             </p>
           </div>
         </div>
@@ -40,10 +40,10 @@ const StartupStory = () => {
       <div>
         <Image
           src={chargeOnsite}
-          alt="chargeOnsite"
+          alt="Partnership"
           width={500}
           height={500}
-          className="w-full"
+          className="w-full h-full"
         />
       </div>
     </div>

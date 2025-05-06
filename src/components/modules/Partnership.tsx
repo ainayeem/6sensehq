@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const Partnership = () => {
   return (
-    <div className="md:flex">
-      <div className="p-6 bg-[#faf6f1]">
-        <h2 className="font-bold text-2xl mb-4">Partnership</h2>
-        <h1 className="font-bold text-4xl">
-          Pattern50 Solving North Carolina Startup Problem <br />
-          <span className="text-secondary">With 6sense</span>
+    <div className="md:flex mx-auto lg:px-28 lg:my-16">
+      <div className="px-6 bg-[#faf6f1] py-6 md:py-8 md:pl-16">
+        <h2 className="font-bold text-2xl mb-4 text-primary">Partnership</h2>
+        <h1 className="font-bold text-4xl text-primary">
+          Pattern50 Solving <br /> North Carolina Startup <br /> Problem
+          <span className="text-secondary"> With 6sense</span>
         </h1>
         <p className="my-4">
           6sense works with Pattern50, an NC-based Software firm, led by serial
@@ -43,7 +43,7 @@ const Partnership = () => {
           alt="Partnership"
           width={500}
           height={500}
-          className="w-full"
+          className="w-full h-full"
         />
       </div>
     </div>
