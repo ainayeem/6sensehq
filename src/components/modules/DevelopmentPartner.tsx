@@ -12,8 +12,11 @@ import Image from "next/image";
 const DevelopmentPartner = () => {
   return (
     <div className="my-12">
-      <h1 className="font-bold text-2xl text-center text-primary lg:mt-16">
+      <h1 className="hidden lg:block font-bold text-2xl text-center text-primary lg:mt-16">
         A Development Partner for New Age Startups
+      </h1>
+      <h1 className="lg:hidden font-bold text-2xl text-center text-primary lg:mt-16">
+        A Development Partner for <br /> New Age Startups
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-8 gap-4 mt-8 md:px-52 justify-center items-center lg:mb-20">
         <Image

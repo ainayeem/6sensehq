@@ -3,48 +3,63 @@ import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
 
 const StartupStory = () => {
+  const features = [
+    "Top 0.5% devs at 1/10th cost.",
+    "We manage ops; you lead direction.",
+    "We handle recruitment, training & HR.",
+  ];
+
   return (
-    <div className="md:flex md:flex-row-reverse mx-auto lg:px-28 lg:my-16">
-      <div className="px-6 bg-[#faf6f1] py-6 md:py-8 md:pl-16 md:w-[50%]">
-        <h2 className="font-bold text-2xl mb-4 text-primary">Startup Story</h2>
-        <h1 className="font-bold text-4xl text-primary">
-          Empowering the brave EV revolution with
-          <span className="text-secondary"> Charge OnSite</span>
-        </h1>
-        <p className="my-4">
-          For 36 months, 6sense has fueled Charge OnSite—a U.S. EV-charging
-          startup—with a fully managed dev team
-        </p>
-        <div className="space-y-4 font-medium text-[12px]">
-          <div className="flex gap-2">
-            <BadgeCheck />
-            <p>50,000+ Dev Hours delivered for Pattern50.</p>
+    <div className="container">
+      <div
+        className={`bg-[#faf6f1] max-w-[1200px] lg:mx-auto my-36 lg:rounded-2xl grid grid-cols-1 lg:grid-cols-2 gap-16`}
+      >
+        <div className="w-full hidden lg:block">
+          <Image
+            src={chargeOnsite}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="lg:rounded-l-md w-full h-full object-cover"
+          />
+        </div>
+        <div className="py-8 px-6 lg:px-0">
+          <h2 className="font-bold text-2xl text-primary mb-8">
+            Startup Story
+          </h2>
+          <h1 className="font-bold text-4xl lg:text-5xl leading-11 lg:leading-15 text-primary">
+            Pattern50 Sog <br /> North Carolina Startup Problem
+            <span className="text-secondary"> With 6sense</span>
+          </h1>
+
+          <p className="my-5 leading-6 font-normal text-base lg:text-lg">
+            6sense works with Pattern50, an NC-based Software firm, led by
+            serial investor and long-time CTO Jim Swain.
+          </p>
+
+          <div className="space-y-3 lg:space-y-4 leading-6 font-normal text-xs lg:text-lg">
+            {features.map((text, index) => (
+              <div key={index} className="flex gap-2">
+                <BadgeCheck />
+                <p>{text}</p>
+              </div>
+            ))}
           </div>
-          <div className="flex gap-2">
-            <BadgeCheck />
-            <p>13 Experts accelerating 3 startup backlogs.</p>
-          </div>
-          <div className="flex gap-2">
-            <BadgeCheck />
-            <p>
-              <span className="font-bold">$1.5M</span> Saved on Pattern50
-              product costs.
-            </p>
+
+          <div className="flex gap-3.5 mt-10">
+            <button className="shq-btn-primary">Book a demo</button>
           </div>
         </div>
 
-        <button className="bg-secondary text-white  px-6 py-4 my-4">
-          Book a demo
-        </button>
-      </div>
-      <div>
-        <Image
-          src={chargeOnsite}
-          alt="Partnership"
-          width={500}
-          height={500}
-          className="w-full h-full"
-        />
+        <div className="w-full lg:hidden">
+          <Image
+            src={chargeOnsite}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="lg:rounded-r-md w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

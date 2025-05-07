@@ -1,7 +1,7 @@
 .banner {
-  background: url("../../assets/Pattern.svg");
+  background: url("../../assets/Pattern.svg"), #fff;
   /* height: 250px; */
   /* background-size: cover; */
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 }
