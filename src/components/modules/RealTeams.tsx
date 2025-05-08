@@ -1,26 +1,26 @@
-import { HandCoins, Rocket, Award, ThumbsUp } from "lucide-react"; // import different icons
+import { HandCoins, ClockArrowUp, ChevronsUp } from "lucide-react"; // import different icons
 import styles from "./Hero.module.css";
 
 const stats = [
   {
-    percentage: "39-96%",
+    percentage: "39-52%",
     description: "Savings on Dev Team Payroll",
     icon: HandCoins,
   },
   {
-    percentage: "3x",
-    description: "Faster team ramp-up speed",
-    icon: Rocket,
-  },
-  {
     percentage: "2x",
-    description: "Code shipped per sprint",
-    icon: Award,
+    description: "Faster Product Shipment",
+    icon: ChevronsUp,
   },
   {
-    percentage: "80%",
-    description: "Client satisfaction rate",
-    icon: ThumbsUp,
+    percentage: "40 hours",
+    description: "Saved from Admin Works",
+    icon: ClockArrowUp,
+  },
+  {
+    percentage: "4x",
+    description: "Faster Hiring than Linkedin",
+    icon: ChevronsUp,
   },
 ];
 

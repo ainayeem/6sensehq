@@ -1,5 +1,6 @@
 import { ArrowBigUp, Wrench } from "lucide-react";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 const steps = [
   {
@@ -10,12 +11,13 @@ const steps = [
   {
     step: 2,
     title: "Join Sprint Reviews",
-    description: "Collaborate with your Product Owner",
+    description: "Stay updated on each sprint’s progress",
   },
   {
     step: 3,
     title: "Check In Daily",
-    description: "Collaborate with your Product Owner",
+    description:
+      "Attend brief scrums to review what’s been done and what’s next",
   },
 ];
 
@@ -77,7 +79,9 @@ const Works = () => {
           ))}
         </div>
         <div className="flex gap-3.5 mt-8 items-center">
-          <button className="shq-btn-primary">Book a demo</button>
+          <Link href="/book-demo">
+            <button className="shq-btn-primary">Book a demo</button>
+          </Link>
           <ArrowBigUp />
           <Wrench />
         </div>

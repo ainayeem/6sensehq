@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const steps = [
   "Partnering with Bangladesh’s top universities",
-  "Rigorous technical & soft skill training",
-  "Ongoing mentorship & career development",
+  "Intensive 4-month training",
+  "Hands-on live projects before deployment",
 ];
 
 const RetainTalent = () => {

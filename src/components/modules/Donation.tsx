@@ -4,31 +4,54 @@ import Image from "next/image";
 
 const Donation = () => {
   return (
-    <div className="md:flex max-w-[85%] mx-auto md:p-16">
-      <div className="p-6">
-        <h2 className="font-bold text-2xl mb-4 text-primary">
-          For every hire you do, we donate the first months 50% salary to a
-          nonprofit.
-        </h2>
-        <p className="my-4">
-          Which goes into making the lives of young Bangladeshi children better.
-        </p>
-      </div>
-      <div className="flex gap-2">
-        <Image
-          src={donate1}
-          alt="Partnership"
-          width={500}
-          height={500}
-          className="w-48"
-        />
-        <Image
-          src={donate2}
-          alt="Partnership"
-          width={500}
-          height={500}
-          className="w-32 h-32"
-        />
+    <div className="container">
+      <div
+        className={`max-w-[1200px] lg:mx-auto my-36 lg:pl-16 lg:rounded-2xl grid grid-cols-1 lg:grid-cols-2 lg:gap-8`}
+      >
+        <div className="w-full gap-4 hidden lg:flex">
+          <Image
+            src={donate1}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="w-[50%] h-full"
+          />
+          <Image
+            src={donate2}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="w-[50%] h-[80%]"
+          />
+        </div>
+        <div className="py-8 px-6 lg:p-8 bg-[#faf6f1]">
+          <h1 className="font-bold text-4xl lg:text-4xl leading-10 lg:leading-15 text-primary">
+            For every hire you do, we donate the first months 50% salary to a
+            nonprofit.
+          </h1>
+
+          <p className="my-5 leading-6 font-normal text-base lg:text-lg">
+            Which goes into making the lives of young Bangladeshi children
+            better.
+          </p>
+        </div>
+
+        <div className="w-full flex gap-4 lg:gap-4 lg:hidden p-4">
+          <Image
+            src={donate1}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="w-[50%] h-48"
+          />
+          <Image
+            src={donate2}
+            alt="Partnership"
+            width={500}
+            height={500}
+            className="w-[50%] h-[80%]"
+          />
+        </div>
       </div>
     </div>
   );

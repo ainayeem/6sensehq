@@ -12,43 +12,17 @@ const steps = [
   {
     image: started2,
     title: "Step 2",
-    description: "Meet your PM and align on sprint goals",
+    description: "Select your tech stack & team needs",
   },
   {
     image: started3,
     title: "Step 3",
-    description: "Start shipping with your new team",
+    description: "Get matched & start your free trial",
   },
 ];
 
 const GetStarted = () => {
   return (
-    // <div className="p-6 md:w-[75%] mx-auto md:my-16">
-    //   <h1 className="text-primary font-bold text-4xl text-center">
-    //     How to <span className="text-secondary">Get Started?</span>
-    //   </h1>
-    //   <p className="my-6 text-center">
-    //     It’s simpler than onboarding a single freelancer. We follow Scrum, and
-    //     you get a <br /> dedicated project manager—so as CTO, all you need to do
-    //     is create the backlog.
-    //   </p>
-    //   <div className="grid md:grid-cols-3 gap-4">
-    //     {steps.map((step, index) => (
-    //       <div key={index} className="bg-[#faf6f1] p-4 rounded-2xl gap-4">
-    //         <Image
-    //           src={step.image}
-    //           alt={`step-${index + 1}`}
-    //           width={500}
-    //           height={500}
-    //           className="hidden md:block"
-    //         />
-    //         <h1 className="text-primary font-bold text-xl">{step.title}</h1>
-    //         <p>{step.description}</p>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
-
     <div className="container my-12 lg:my-32">
       <h1 className="font-bold text-4xl lg:text-5xl leading-11 lg:leading-15 text-primary text-center">
         How to

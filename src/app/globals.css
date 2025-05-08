@@ -35,5 +35,5 @@ body {
   @apply w-full mx-auto max-w-[1440px];
 }
 .shq-btn-primary {
-  @apply bg-secondary text-white px-6 py-4 font-bold text-lg tracking-wider;
+  @apply bg-secondary text-white px-6 py-4 font-bold text-lg tracking-wider cursor-pointer;
 }

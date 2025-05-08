@@ -5,3 +5,9 @@
   /* background-position: center; */
   /* background-repeat: no-repeat; */
 }
+
+.map {
+  background: url("../../assets/Bangladesh.svg"), #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}

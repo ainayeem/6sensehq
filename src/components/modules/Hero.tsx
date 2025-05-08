@@ -1,5 +1,6 @@
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Hero.module.css";
 // import img1 from "@/assets/hero-img/img-1.png";
 // import img2 from "@/assets/hero-img/img-2.png";
@@ -19,7 +20,7 @@ const Hero = () => {
   return (
     <div className="container">
       <div
-        className={`${styles.banner} max-w-[1200px] lg:mx-auto border border-[#BA8D4640] mx-4 my-36 px-2 lg:px-16 py-4 lg:py-11 rounded-2xl grid grid-cols-1 lg:grid-cols-2 gap-16`}
+        className={`${styles.banner} max-w-[1200px] lg:mx-auto border border-[#BA8D4640] mx-2 my-12 px-4 lg:px-16 py-4 lg:py-11 rounded-2xl grid grid-cols-1 lg:grid-cols-2 lg:gap-16`}
       >
         <div className="">
           <h1 className="font-bold text-4xl lg:text-5xl leading-11 lg:leading-15 text-primary">
@@ -29,8 +30,8 @@ const Hero = () => {
           </h1>
 
           <p className="my-5 leading-6 font-normal text-base lg:text-lg">
-            6sense works with Pattern50, an NC-based Software firm, led by
-            serial investor and long-time CTO Jim Swain.
+            Hire a fully managed, dedicated development team that integrates
+            into your workflow without the headache of full-time hiring.
           </p>
 
           <div className="space-y-3 lg:space-y-4 leading-6 font-normal text-xs lg:text-lg">
@@ -42,8 +43,10 @@ const Hero = () => {
             ))}
           </div>
 
-          <div className="flex gap-3.5 mt-10">
-            <button className="shq-btn-primary">Book a demo</button>
+          <div className="lg:flex lg:gap-3.5 lg:mt-10 mt-8 mb-6">
+            <Link href="/book-demo">
+              <button className="shq-btn-primary">Book a demo</button>
+            </Link>
             <Image
               src={getTeam}
               alt="Get your team today!"
